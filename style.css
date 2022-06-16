@@ -45,7 +45,6 @@ button {
 
 body {
     font-family: "BRFirma", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-    border: 1px solid;
 }
 
 .flex {
@@ -230,7 +229,6 @@ padding: 0 5px;
     width: 200px;
     font-size: 1rem;
     border-radius: 5px;
-    /* height: 30px; */
     padding: 15px;
     color: white;
     position: absolute;
@@ -241,8 +239,6 @@ padding: 0 5px;
 
 
 .emaill form {
-    /* justify-content: space-between; */
-    /* width: 630px; */
     gap: 10px;
 
 }
@@ -951,7 +947,6 @@ hr {
         align-content: center;
     }
    
-    
 
     .navbar,
     .nav-nav-bar {
@@ -1011,6 +1006,11 @@ hr {
         width: 90%;
         
     }
+    #download-btn{
+        width: 150px;
+        height: 50px;
+        padding: 2px 0;
+    }
 
     .containerB {
         display: flex;
@@ -1040,6 +1040,7 @@ hr {
     .ratee {
         width: 100%;
         margin-top: 50px;
+        height: auto;
     }
 
     .payment-div {
@@ -1113,7 +1114,7 @@ hr {
     .email-field{
         display: flex;
         flex-direction: column;
-        width: 250px;
+        width: 200px;
         margin-bottom: 15px;
         position: relative;
        top: -60px;
