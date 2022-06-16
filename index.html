@@ -8,98 +8,127 @@
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
     <script src="https://kit.fontawesome.com/a2a418808a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-    <div class="head">
+    <div class="head flex">
         <h3>Ope's diary is out. Get your copy</h3>
     </div>
-    <div class="navbar">
-        <div class="cowry">
-            <h2>cowrywise</h2>
-        </div>
-        <div class="bar">
-            <div class="personal">
-                <a class="nav-links" href="">personal</a>
-                <ul class="nav-navbar">
-                    <li><a href="">plan</a> </li>
 
-                    <li><a href="">save</a> </li>
-                    
-                    <li><a href="">invest</a> </li>
-                    <li><a href="">Get Stash</a></li>
-                </ul>
+    <div class="container">
+        <div class="header flex">
+            <div class="logo flex">
+                <svg width="122" height="29" viewBox="0 0 152 29" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    svg-inline="" role="presentation" focusable="false" tabindex="-1">
+                    <g clip-path="url(#clip0_10311_7421)" fill="#0067F5">
+                        <path
+                            d="M14 .5H6.154l-.015.027L5.056 2.5H14c6.625 0 12 5.372 12 12s-5.373 12-12 12-12-5.373-12-12c0-1.254.196-2.5.582-3.692h2.29A9.846 9.846 0 1014 4.655H3.873l-1.097 2H14a7.845 7.845 0 11-6.923 4.152h2.595a5.689 5.689 0 104.328-2H1.593l-1.097 2A14.025 14.025 0 000 14.5c0 7.732 6.268 14 14 14s14-6.268 14-14-6.268-14-14-14zm0 10.308a3.693 3.693 0 110 7.385 3.693 3.693 0 010-7.385zM34.154 14.796c0-3.89 2.61-6.622 6.523-6.622 2.412 0 4.381 1.058 5.415 2.83l-2.264 1.6c-.714-1.132-1.797-1.673-3.077-1.673-2.116 0-3.52 1.503-3.52 3.865 0 2.338 1.403 3.864 3.52 3.864 1.28 0 2.363-.566 3.077-1.699l2.264 1.6c-1.034 1.798-3.003 2.832-5.415 2.832-3.914 0-6.523-2.733-6.523-6.597zM46.518 14.796c0-3.644 2.585-6.622 6.597-6.622 4.037 0 6.597 2.978 6.597 6.622 0 3.619-2.561 6.597-6.597 6.597-4.01 0-6.597-2.979-6.597-6.597zm10.117 0c0-2.29-1.354-3.89-3.52-3.89s-3.52 1.6-3.52 3.89c0 2.264 1.354 3.864 3.52 3.864s3.52-1.6 3.52-3.864zM79.424 8.517l-3.842 12.53H72.34l-2.715-8.837-2.74 8.837h-3.248l-3.82-12.53h2.98l2.596 9.034 2.787-9.034h2.883l2.788 9.034 2.57-9.034h3.004zM121.622 8.517l-3.845 12.53h-3.243l-2.715-8.837-2.74 8.837h-3.241l-3.82-12.527h2.979l2.595 9.034 2.785-9.037h2.883l2.788 9.034 2.571-9.034h3.003zM88.412 8.47v2.805a9.215 9.215 0 00-1.379-.123c-2.19 0-3.347 1.108-3.347 3.717v6.18h-3.002V8.517h2.95v2.094c.617-1.452 1.97-2.314 3.693-2.314.37-.007.736.051 1.085.172zM100.871 8.517v11.274c0 4.21-2.338 6.523-6.474 6.523-2.141 0-4.11-.64-5.293-1.747l1.355-2.191c1.057.835 2.436 1.255 3.766 1.255 2.314 0 3.692-1.304 3.692-3.841v-1.08c-.713 1.378-2.24 2.214-4.086 2.214-2.659 0-4.332-1.673-4.332-4.726v-7.68h3.003v6.917c0 1.92.788 2.757 2.363 2.757 1.821 0 3.028-1.107 3.028-2.93V8.518h2.978zM122.412 4.555c0-1.083.763-1.87 1.92-1.87 1.132 0 1.893.787 1.893 1.87 0 1.084-.763 1.871-1.893 1.871-1.157 0-1.92-.788-1.92-1.87zm.419 3.963h3.003v12.53h-3.003V8.518zM127.345 19.005l1.625-1.896c.984 1.083 2.511 1.723 4.111 1.723 1.427 0 2.215-.541 2.215-1.329 0-.665-.493-1.083-1.748-1.378l-2.043-.468c-2.609-.615-3.717-1.822-3.717-3.545 0-2.314 1.92-3.938 5.17-3.938 2.215 0 4.061.762 5.144 1.994l-1.6 1.944c-1.083-.935-2.314-1.378-3.619-1.378-1.403 0-2.092.517-2.092 1.28 0 .59.418.96 1.748 1.255l2.166.517c2.633.591 3.594 1.797 3.594 3.52 0 2.486-1.921 4.087-5.243 4.087-2.486 0-4.578-.936-5.711-2.388zM151.636 15.681h-9.331c.32 2.02 1.649 3.102 3.692 3.102 1.403 0 2.585-.517 3.496-1.576l1.797 1.773c-1.182 1.526-3.077 2.413-5.391 2.413-3.988 0-6.647-2.61-6.647-6.548 0-3.89 2.561-6.671 6.352-6.671 3.643 0 6.104 2.535 6.104 6.35 0 .387-.025.774-.072 1.158zm-9.331-2.042h6.403c-.148-1.846-1.281-2.855-3.077-2.855-1.848 0-3.005 1.058-3.326 2.855z">
+                        </path>
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_10311_7421">
+                            <path fill="#fff" transform="translate(0 .5)" d="M0 0h151.709v28H0z"></path>
+                        </clipPath>
+                    </defs>
+                </svg>
+
             </div>
-            <div><a class="nav-links" href="">Business</a>
-                <ul class="nav-navbar">
-                    <li><a href="">Sprout</a> </li>
-                </ul>
+
+            <div class="nav flex desktop">
+                <div class="nav-links">
+                    <ul class="flex">
+                        <li class="nav-link">Personal</li>
+                        <li class="nav-link">Business</li>
+                        <li class="nav-link">Developer</li>
+                        <li class="nav-link">Learn</li>
+                    </ul>
+                </div>
+                <div class="nav-btns flex">
+                    <button class="log-btn">
+                        Log In
+                    </button>
+                    <button class="primary-btn">
+                        Sign up for free
+                    </button>
+                </div>
             </div>
-            <div><a class="nav-links" href="">Developer</a>
-                <ul class="nav-navbar">
-                    <li><a href="">Embed</a> </li>
-                    <li><a href="">Docs</a> </li>
-                </ul>
+            <div class="mobile">
+                <a class="navbar-trigger">
+                    <span>&#9776
+                    </span>
+                    <div class="mobile-navlinks">
+                        <li class="nav-link">Personal</li>
+                        <li class="nav-link">Business</li>
+                        <li class="nav-link">Developer</li>
+                        <li class="nav-link">Learn</li>
+                    </div>
+                </a>
             </div>
-            <div><a class="nav-links" href="">Learn</a> </div>
         </div>
-        <div class="barr">
-            <h2 class="log">Log in</h2>
-            <h2 class="sign"> sign up for free</h2>
-        </div>
+
     </div>
-    <div class="rectangle"> </div>
-    <img class="image" src="./Capture.JPG" alt="">
-    <img class="image2" src="./Capture2.JPG" alt="">
-    <div class="wura">
-        <p>I've become more conscious of how I spend my money and also about investing. Now, I feel comfortable spending
-            knowing my Cowrywise account is there.</p>
-        <div class="wur">
-            <h4>Wuraola F</h4>
-            <h4>@wuwu</h4>
+
+  <div class="container">
+    <div class="rect-div">
+        <div class="rectangle">
+            <img class="image"  src="./images/Capture.JPG" alt="">
+            <!-- <img class="image2" src=".images/Capture2.JPG" alt=""> -->
+            <div class="wura">
+                <p>I've become more conscious of how I spend my money and also about investing. Now, I feel comfortable
+                    spending
+                    knowing my Cowrywise account is there.</p>
+                <div class="wur">
+                    <h4>Wuraola F</h4>
+                    <h4>@wuwu</h4>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <p class="put">Put your
+                money to work.</p>
+            <p class="buildd">Build discipline, access financial tools that steadily grow your finances.</p>
+            <div class="emaill">
+                <form class="flex" action="">
+                    <input class="email" type="text" placeholder="Your Email">
+                <button class="primary-btn">Start investment</p>
+                </form>
+
+                </div>
         </div>
     </div>
 
-    <div class="put">
-        <p>Put your</p>
-        <p class="putt">money to work.</p>
-        <p class="build">Build discipline, access financial tools that steadily grow your finances.</p>
-        <div class="emaill">
-            <form action="">
-                <input class="email" type="text" placeholder="Your Email">
-            </form>
-            <p class="start">Start investment</p>
-        </div>
-    </div>
-    <p class="license">LICENSED BY THE SEC</p>
+  </div>
+    <!-- <p class="license">LICENSED BY THE SEC</p> -->
 
     <section>
-        <div class="containerA">
+        <div class="containerA container container-r">
             <div class="container1">
                 <div class="get">
                     <h1>Get financial freedom</h1>
-                    <p>Plan towards your dream home, fund your kid's education, travel the world, all in one app.</p>
+                    <p>Plan towardS your dream home, fund your kid's education, travel the world, all in one app.</p>
                 </div>
                 <div class="saving">
                     <h3>Savings</h3>
                     <h1>Create multiple savings plans</h1>
                     <p>Earn better interest rates than your bank</p>
                     <a href="#">START SAVING</a>
-                    <img src="./savings.png" alt="" width="498px">
+                    <img class="section-img"  src="./images/savings.png" alt="" width="498px">
                 </div>
                 <div class="mutual">
                     <h3>Mutual Funds</h3>
                     <h1>Play the long-term game</h1>
                     <p>Invest in diverse and quality mutual funds with any amount</p>
                     <a href="#">START INVESTING</a>
-                    <img src="./mutual-funds.svg" alt="" width="500px">
+                    <img class="section-img"  src="./images/mutual-funds.svg" alt="" width="500px">
                 </div>
                 <div class="stash">
                     <h3>Stash</h3>
                     <h1>Your secure digital wallet</h1>
                     <p>Send and receive cash in seconds for free. You only need their username.</p>
                     <a href="#">EXPLORE IT NOW</a>
-                    <img src="./stash.svg" alt="" width="498px">
+                    <img class="section-img"  src="./images/stash.svg" alt="" width="498px">
                 </div>
             </div>
             <div class="container2">
@@ -108,20 +137,20 @@
                     <h1>Save with friends</h1>
                     <p>Stay motivated and have fun saving with friends and family.</p>
                     <a href="#">JOIN A CIRCLE</a>
-                    <img src="./circles.svg" alt="" width="500px">
+                    <img class="section-img"  src="./images/circles.svg" alt="" width="500px">
                 </div>
                 <div class="emergency">
                     <h3>Emergency Fund</h3>
                     <h1>Save for the rainy day</h1>
                     <p>Build a safety net for unexpected expenses.</p>
                     <a href="#">CREATE YOUR EMERGENCY PLAN</a>
-                    <img src="./emergency.svg" alt="" width="500px">
+                    <img class="section-img"  src="./images/emergency.svg" alt="" width="500px">
                 </div>
                 <div class="stocks">
                     <h3>US Stocks and bonds (Coming soon)</h3>
                     <h1>Grow your global portfolio</h1>
                     <a href="#">GET EARLY ACCESS</a>
-                    <img src="./stocks.svg" alt="" width="500px">
+                    <img class="section-img"  src="./images/stocks.svg" alt="" width="500px">
                 </div>
             </div>
         </div>
@@ -129,51 +158,54 @@
     </section>
 
     <section>
-        <div class="containerB">
+        <div class="containerB container">
             <div class="app">
-                <img class="app-img" src="./app-screenshot-investment-platform-nigeria.png" alt="" width="370px"
+                <img class="app-img"  src="./images/app-screenshot-investment-platform-nigeria.png" alt="" width="370px"
                     height="700px">
             </div>
-            <div>
+            <div class="payment-div">
                 <div class="build">
-                    <h1>Start building wealth in 5 minutes</h1>
+                    <h1 class="wealth">Start building wealth in 5 minutes</h1>
                 </div>
-                <div class="verr">
-                    <div class="ver">
-                        <p>01</p>
-                        <div class="vertical-line"></div>
+                <div class="verr-div container-r">
+                    <div class="verr">
+                        <div class="ver">
+                            <p>01</p>
+                            <div class="vertical-line"></div>
+                        </div>
+                        <div class="create">
+                            <h3>Create an account</h3>
+                            <p>Sign up for an account with your name, email and phone number.</p>
+                        </div>
                     </div>
-                    <div class="create">
-                        <h3>Create an account</h3>
-                        <p>Sign up for an account with your name, email and phone number.</p>
+                    <div class="verr">
+                        <div class="ver">
+                            <p>02</p>
+                            <div class="vertical-line"></div>
+                        </div>
+                        <div class="create">
+                            <h3>Add a payment method</h3>
+                            <p>Using your debit card, bank account, USSD, QR Code, setup your first plan.</p>
+                        </div>
+                    </div>
+                    <div class="verr">
+                        <div class="ver">
+                            <p>03</p>
+                        </div>
+                        <div class="create">
+                            <h3>Watch your money grow</h3>
+                            <p>Sit back, relax & let your money work for you all day, everyday.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="verr">
-                    <div class="ver">
-                        <p>02</p>
-                        <div class="vertical-line"></div>
-                    </div>
-                    <div class="create">
-                        <h3>Add a payment method</h3>
-                        <p>Using your debit card, bank account, USSD, QR Code, setup your first plan.</p>
-                    </div>
-                </div>
-                <div class="verr">
-                    <div class="ver">
-                        <p>03</p>
-                    </div>
-                    <div class="create">
-                        <h3>Watch your money grow</h3>
-                        <p>Sit back, relax & let your money work for you all day, everyday.</p>
-                    </div>
-                </div>
+
                 <a href=""><button class="btn">Sign Up Now</button></a>
             </div>
         </div>
     </section>
 
     <section>
-        <div class="containerC">
+        <div class="containerC container">
             <h1 class="keep">Keeping your money safe is our business.</h1>
             <p class="trust">Trust is our currency. We are committed to the security of your money and the protection of
                 your account.</p>
@@ -182,7 +214,7 @@
                 <div class="cont-c">
                     <div class="clone">
                         <div>
-                            <img class="clone-img" src="./clone-solid.svg" alt="" width="20px">
+                            <img class="clone-img"  src="./images/clone-solid.svg" alt="" width="20px">
                         </div>
                         <div class="bank">
                             <h3>Bank-grade Security</h3>
@@ -190,9 +222,9 @@
                                 bank data are encrypted to prevent unauthorised access to sensitive information.</p>
                         </div>
                     </div>
-                    <div class="clone">
+                    <div class="clone regulatory">
                         <div>
-                            <img class="clone-img" src="./clone-solid.svg" alt="" width="20px">
+                            <img class="clone-img"  src="./images/clone-solid.svg" alt="" width="20px">
                         </div>
                         <div class="bank">
                             <h3>Regulatory Compliance</h3>
@@ -205,7 +237,7 @@
                 <div class="cont-c">
                     <div class="clone">
                         <div>
-                            <img class="clone-img" src="./clone-solid.svg" alt="" width="20px">
+                            <img class="clone-img"  src="./images/clone-solid.svg" alt="" width="20px">
                         </div>
                         <div class="bank">
                             <h3>Two-Factor Authentication (2FA)</h3>
@@ -216,7 +248,7 @@
                     </div>
                     <div class="clone">
                         <div>
-                            <img class="clone-img" src="./clone-solid.svg" alt="" width="20px">
+                            <img class="clone-img"  src="./images/clone-solid.svg" alt="" width="20px">
                         </div>
                         <div class="bank">
                             <h3>Best-In-Class-Assets</h3>
@@ -231,7 +263,7 @@
         </div>
     </section>
 
-    <section class="ContainerD">
+    <section class="ContainerD container-r">
         <div class="wh">
             <h3 class="why">Why cowrywise?</h3>
             <h1 class="charge">Savings charge? <span>Nope</span></h1>
@@ -255,7 +287,7 @@
                 <p class="available"> Available on the Play Store</p>
                 <p class="paragraph">“User interface is fantastic, deposits and withdrawals flawless and fast. I wish I
                     had discovered this years ago, would have been a millionaire by now” - Obiora, Nov 2021</p>
-                <a href="#">Download Now</a>
+                <a class="download-now" href="#">Download Now</a>
             </div>
             <div class="ratee">
                 <div class="rate">
@@ -272,117 +304,136 @@
                 <p class="available"> Available on the App Store</p>
                 <p class="paragraph">“I just don't know what to say about this app all i know is that it's awesome, it's
                     been 2 years plus and I haven't had a reason to complain.” - Henrietta, December 2021</p>
-                <a class="down-load" href="#">Download Now</a>
+                <a class="download-now" href="#">Download Now</a>
             </div>
         </div>
-        <div class="sign-up">
-            <div>
-                <h1>Sign up for free.</h1>
-                <h1>Start investing today.</h1>
+        <div class="sign-up container-r">
+            <div class="sign-free">
+                <h1 class="free">Sign up for free.</h1>
+                <h1 class="start-invest">Start investing today.</h1>
             </div>
 
             <div class="email-field-whole">
-                <input class="email-field" type="text" placeholder="Your email">
-                <button class="sign-btn"><a href=""></a>Sign up for free</button>
+                <div class="e-mail">
+                    <input class="email-field" type="text" placeholder="Your email">
+                </div>
+                <div>
+                    <button class="sign-btn"><a href=""></a>Sign up for free</button>
+                </div>
+                
             </div>
 
 
         </div>
 
-        <div class="footer-links">
-            <div>
-                <h3>Company</h3>
-                <div class="links">
-                    <a href="#">About Us</a>
-                    <a href="#">Press</a>
-                    <a href="#">Careers</a>
-                    <a href="#">Ambassadors</a>
-                    <a href="#">Privacy</a>
-                    <a href="#">Terms</a>
+        <div class="footer-links container container-r">
+            <div class="company-pro">
+                <div>
+                    <h3>Company</h3>
+                    <div class="links">
+                        <a href="#">About Us</a>
+                        <a href="#">Press</a>
+                        <a href="#">Careers</a>
+                        <a href="#">Ambassadors</a>
+                        <a href="#">Privacy</a>
+                        <a href="#">Terms</a>
+                    </div>
+                </div>
+
+                <div class="product-div">
+                    <h3>Product</h3>
+                    <div class="links">
+                        <a href="#">Saving Plans</a>
+                        <a href="#">Investment Plans</a>
+                        <a href="#">Mutual Funds</a>
+                        <a href="#">Stash</a>
+                        <a href="#">Embed API</a>
+                        <a href="#">Sprout</a>
+                        <a href="#">Circles</a>
+                        <a href="#">Features</a>
+                        <a href="#">Got a suggestion?</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="resource-contact">
+                <div>
+                    <h3>Resources</h3>
+                    <div class="links">
+                        <a href="#">Customer Stories</a>
+                        <a href="#">Media</a>
+                        <a href="#">FAQs</a>
+                        <a href="#">Security</a>
+                        <a href="#">Estimate your Interest</a>
+                        <a href="#">Plan Education</a>
+                        <a href="#">Blog</a>
+                        <a href="#">Help Center</a>
+                    </div>
+                </div>
+
+                <div>
+                    <h3>Contact</h3>
+                    <div class="links">
+                        <a href="#">support@cowrywise.com</a>
+                        <a href="#">WhatsApp ↗</a>
+                    </div>
                 </div>
             </div>
 
-            <div>
-                <h3>Product</h3>
-                <div class="links">
-                    <a href="#">Saving Plans</a>
-                    <a href="#">Investment Plans</a>
-                    <a href="#">Mutual Funds</a>
-                    <a href="#">Stash</a>
-                    <a href="#">Embed API</a>
-                    <a href="#">Sprout</a>
-                    <a href="#">Circles</a>
-                    <a href="#">Features</a>
-                    <a href="#">Got a suggestion?</a>
-                </div>
-            </div>
-
-            <div>
-                <h3>Resources</h3>
-                <div class="links">
-                    <a href="#">Customer Stories</a>
-                    <a href="#">Media</a>
-                    <a href="#">FAQs</a>
-                    <a href="#">Security</a>
-                    <a href="#">Estimate your Interest</a>
-                    <a href="#">Plan Education</a>
-                    <a href="#">Blog</a>
-                    <a href="#">Help Center</a>
-                </div>
-            </div>
-
-            <div>
-                <h3>Contact</h3>
-                <div class="links">
-                    <a href="#">support@cowrywise.com</a>
-                    <a href="#">WhatsApp ↗</a>
-                </div>
-            </div>
         </div>
     </section>
     <hr>
 
-    <section class="ContainerE">
+    <section class="ContainerE container">
         <ul class="contact-links">
-            <li><a href="#"><img src="./images-removebg-preview.png" alt="" width="10px"></a></li>
-            <li><a href="#"><img src="./whatsapp-removebg-preview.png" alt="" width="20px"></a></li>
-            <li><a href="#"><img src="./download-removebg-preview.png" alt="" width="13px"></a></li>
+            <li><a href="#"><img  src="./images/images-removebg-preview.png" alt="" width="10px"></a></li>
+            <li><a href="#"><img  src="./images/whatsapp-removebg-preview.png" alt="" width="20px"></a></li>
+            <li><a href="#"><img  src="./images/download-removebg-preview.png" alt="" width="13px"></a></li>
         </ul>
 
-        <p class="ng">🇳🇬 5C Reverend Ogunbiyi Street, Ikeja GRA, Lagos Nigeria.</p>
-        <p class="ng">🇺🇸 2261 Market Street #4817 San Francisco, CA 94114</p>
-        <div class="footer-para2">
-            <div class="sec-sec">
-                <div>
-                    <img class="sec" src="./sec (1).png" alt="" width="30px">
-                </div>
-
-                <div class="sec-2">
-                    <h4 class="license2">Licensed by the SEC</h4>
-                    <p class="licensed">Fund Manager</p>
-                </div>
-
+        <div class="ng-div">
+            <div>
+                <p class="ng">🇳🇬 5C Reverend Ogunbiyi Street, Ikeja GRA, Lagos Nigeria.</p>
+                <p class="ng">🇺🇸 2261 Market Street #4817 San Francisco, CA 94114</p>
             </div>
-            <p class="fin">Cowrywise Financial Technology Limited (“Cowrywise”) is a fund manager duly licensed by the
-                Securities and Exchange Commission (SEC) of Nigeria.</p>
-            <p>Our mutual funds are managed by our fund management partners and made available to our clients through
-                our web and mobile applications. The fund manager for each mutual fund is disclosed on every mutual
-                fund's profile page. Any historical returns or expected returns are hypothetical in nature and may not
-                reflect actual future performance. <a href="#">View full list of available mutual funds on
-                    Cowrywise.↗</a> </p>
-            <p>Stash account is a 10-digit virtual bank account number in line with the Nigeria Uniform Bank Account
-                Number (NUBAN) numbering system. The NUBAN accounts are generated with the names of selected banks
-                through our payment partners. In order for a user to be eligible for Stash account number, they must
-                have completed their KYC and added their Bank Verification Number (BVN). Stash is used for the purpose
-                of receiving money transfers in place of a regular debit card. It also receives the proceeds from the
-                sale of any mutual fund on Cowrywise.</p>
-            <p>The content on this website does not constitute a complete description of Cowrywise’s investment advisory
-                services. By using this website, you accept our <a href="#">Terms of Use </a> and <a href="#"> Privacy
-                    Policy.</a></p>
-            <p>Google Play and the Google Play logo are trademarks of Google LLC. Apple, the Apple logo, and iPhone are
-                trademarks of Apple Inc. registered in the U.S.</p>
-            <p>©2022 Cowrywise Financial Technology. All rights reserved</p>
+            
+            <div class="footer-para2-1">
+                <div class="sec-sec">
+                    <div>
+                        <img class="sec"  src="./images/sec (1).png" alt="" width="30px">
+                    </div>
+    
+                    <div class="sec-2">
+                        <h4 class="license2">Licensed by the SEC</h4>
+                        <p class="licensed">Fund Manager</p>
+                    </div>
+    
+                </div>
+            </div>
         </div>
+            <div class="footer-para2">
+                <p class="fin">Cowrywise Financial Technology Limited (“Cowrywise”) is a fund manager duly licensed by the
+                    Securities and Exchange Commission (SEC) of Nigeria.</p>
+                <p>Our mutual funds are managed by our fund management partners and made available to our clients through
+                    our web and mobile applications. The fund manager for each mutual fund is disclosed on every mutual
+                    fund's profile page. Any historical returns or expected returns are hypothetical in nature and may not
+                    reflect actual future performance. <a href="#">View full list of available mutual funds on
+                        Cowrywise.↗</a> </p>
+                <p>Stash account is a 10-digit virtual bank account number in line with the Nigeria Uniform Bank Account
+                    Number (NUBAN) numbering system. The NUBAN accounts are generated with the names of selected banks
+                    through our payment partners. In order for a user to be eligible for Stash account number, they must
+                    have completed their KYC and added their Bank Verification Number (BVN). Stash is used for the purpose
+                    of receiving money transfers in place of a regular debit card. It also receives the proceeds from the
+                    sale of any mutual fund on Cowrywise.</p>
+                <p>The content on this website does not constitute a complete description of Cowrywise’s investment advisory
+                    services. By using this website, you accept our <a href="#">Terms of Use </a> and <a href="#"> Privacy
+                        Policy.</a></p>
+                <p>Google Play and the Google Play logo are trademarks of Google LLC. Apple, the Apple logo, and iPhone are
+                    trademarks of Apple Inc. registered in the U.S.</p>
+                <p>©2022 Cowrywise Financial Technology. All rights reserved</p>
+            </div>
+            
+
 
     </section>
 </body>

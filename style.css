@@ -2,52 +2,115 @@
     margin: 0;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+ul,
+li {
+    padding: 0;
+    margin: 0;
+}
+
+img{
+    height: auto;
+    max-width: 100%;
+}
+
+button {
+    outline: none;
+    border: none;
+    color: #0066f5;
+    font-weight: 600;
+    background-color: transparent;
+    font-family: "BRFirma", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+.primary-btn {
+    background-color: #0066f5;
+    color: #fff;
+    min-height: 44px;
+    padding: 0 20px;
+    border-radius: 6px;
+    min-height: 38px;
+    padding: 0 17px;
+    box-shadow: 0 4px 6px 1px rgb(0 102 245 / 18%);
+}
+
+@font-face {
+    font-family: BRFirma;
+    src: url('./BRFirma-Regular.ttf');
+}
+
 body {
-    font-family: "CW BR Firma";
+    font-family: "BRFirma", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    border: 1px solid;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    max-width: 1600px;
+    padding: 0 20px;
+    margin: auto;
+}
+
+.header {
+    height: 70px;
+    gap: 80px;
+
 }
 
 .head {
-    background-color: blue;
+    background-color: #0066f5;
     height: 35px;
+    display: flex;
+    justify-content: center;
+
 }
+
+.nav {
+    justify-content: space-between;
+    width: 100%;
+}
+
+.nav-links ul {
+    list-style: none;
+    gap: 15px;
+}
+
+.nav-links ul li {
+    color: #6c82a3;
+    font-size: 14px;
+}
+
+.nav-btns {
+    gap: 15px;
+}
+
+.mobile {
+    display: none;
+}
+
+
+
+
+
+
+
+
 
 .head h3 {
     text-align: center;
     color: white;
+    font-size: 13px;
 }
 
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    color: rgb(16, 113, 246);
-    text-transform: capitalize;
-    /* margin-top: 25px; */
-    background-color: white;
-    height: 80px;
-    width: 100%;
-    align-items: center;
-    padding-top: 15px;
-    /* position: fixed; */
-}
 
-.bar {
-    display: flex;
-    color: #95A5BD;
-}
-
-.bar div{
-  padding: 0 10px;
-  position: relative;
-}
-
-.nav-navbar {
-    list-style: none;
-    display: none;
-    background-color: pink;
-    padding: 20px;
-    position: absolute;
-    z-index: 1;
-}
 
 .personal:hover .nav-navbar {
     display: flex;
@@ -55,17 +118,25 @@ body {
     gap: 10px;
 }
 
-.nav-links{
+.nav-links:hover .nav-navbar {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
 
-    
+.nav-links {
     color: #6c82a3;
     font-size: 18px;
     text-transform: capitalize;
     font-weight: 500;
     text-decoration: none;
-
 }
 
+.nav-navbar li a {
+    text-decoration: none;
+    color: #6c82a3;
+    ;
+}
 
 .barr {
     display: flex;
@@ -89,33 +160,27 @@ body {
 }
 
 .rectangle {
-    height: 800px;
-    width: 400px;
+    /* height: 800px; */
+    /* width: 400px;
     background-color: #FFF6ED;
-    margin-top: 50px;
+    margin-top: 50px; */
+    position: relative;
 }
 
-.image {
-    position: absolute;
-    top: 200px;
-    left: 50px;
-}
 
-.image2 {
-    position: absolute;
-    top: 800px;
-    left: 50px;
-}
+
 
 .wura {
-    height: 200px;
+    font-size: 14px;
+    /* border: 1px solid; */
+    height: auto;
     width: 300px;
     color: grey;
     background-color: white;
     position: absolute;
-    top: 700px;
-    left: 300px;
     padding: 20px;
+    bottom: -32px;
+    right: 28px;
 }
 
 .wur {
@@ -126,59 +191,63 @@ body {
 }
 
 .put {
-    font-size: 5.5rem;
-    width: 500px;
-    position: absolute;
-    left: 700px;
-    top: 300px;
+    font-size: 80px;
     color: #022B69;
-    font-family: "CW BR Firma", sans-serif;
+    font-weight: 600;
+    line-height: 68px;
+
 }
+
 
 .putt {
     width: 645px;
     font-size: 5.5rem;
 }
 
-.build {
-    font-size: 1.2rem;
+.buildd {
+    font-size: 15px;
     color: #A2B1C8;
-    width: 630px;
+    margin: 20px 0;
 }
 
 .email {
-    width: 300px;
-    padding: 15px;
+    min-height: 38px;
+    font-size: 13px;
+padding: 0 5px;
     border-radius: 5px;
     background: transparent;
     border: 0.2px #E3E8EF solid;
 
 }
 
+.email::placeholder{
+    font-size: 13px;
+    font-family: "BRFirma", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
 .start {
-    background-color: blue;
+    background-color: #0066f5;
     width: 200px;
     font-size: 1rem;
     border-radius: 5px;
     /* height: 30px; */
     padding: 15px;
     color: white;
-    position: relarive;
-    top: 100px;
+    position: absolute;
+    top: 220px;
+    left: 350px;
     margin-top: 58px;
 }
 
-input {
-    /* outline: none; */
-}
 
-.emaill {
-    display: flex;
+.emaill form {
     /* justify-content: space-between; */
-    width: 630px;
-    gap: 20px;
+    /* width: 630px; */
+    gap: 10px;
 
 }
+
+
 
 .license {
     position: absolute;
@@ -188,25 +257,26 @@ input {
 }
 
 .get {
-    width: 700px;
+    /* width: 700px;
     margin-top: 70px;
-    height: 250px;
+    height: 250px; */
 }
 
 .get h1 {
     color: #022B69;
-    font-size: 4rem;
-    line-height: 1;
-    margin-bottom: 30px;
+    font-size: 37px;
+    font-weight: 600;
+    /* line-height: 1; */
+    margin-bottom: 16px;
 }
 
 .get p {
     color: #7A90B0;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
 }
 
 .saving {
-    width: 550px;
+     
     height: 700px;
     background-color: #F4F6FF;
     border-radius: 5px;
@@ -216,7 +286,7 @@ input {
 
 .saving img {
     position: absolute;
-    left: 90px;
+    right: 0;
     bottom: 0px;
 }
 
@@ -239,17 +309,17 @@ input {
 .saving h1 {
     color: #022B69;
     margin: 30px 0;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .saving p {
     color: #748BB0;
     margin-bottom: 30px;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .mutual {
-    width: 550px;
+     
     height: 700px;
     background-color: #E1F6FF;
     border-radius: 5px;
@@ -260,7 +330,7 @@ input {
 
 .mutual img {
     position: absolute;
-    left: 90px;
+    right: 0;
     bottom: 0;
 }
 
@@ -279,61 +349,61 @@ input {
 .mutual h1 {
     color: #022B69;
     margin: 30px 0;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .mutual p {
     color: #748BB0;
     margin-bottom: 30px;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .stash {
-    width: 550px;
+     
     height: 700px;
     background-color: #0066F5;
     border-radius: 5px;
     margin-top: 40px;
     position: relative;
     padding-left: 40px;
+    color: white;
     /* margin-left: 30px; */
 }
 
 .stash img {
     position: absolute;
-    left: 90px;
+    right: 0;
     bottom: 0;
 }
 
 .stash a {
-    color: #5797F2;
+    color: white;
     text-decoration: none;
     font-size: 0.8rem;
 }
 
 .stash h3 {
-    color: #96A7C5;
+    color: white;
     margin-top: 70px;
     font-size: 1.5rem;
 }
 
 .stash h1 {
-    color: #022B69;
+    color: white;
     margin: 30px 0;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .stash p {
-    color: #748BB0;
+    color: hsla(0,0%,100%,.6);
     margin-bottom: 30px;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .container1 {
     display: flex;
     flex-direction: column;
-    margin-left: 35px;
-    font-family: "CW BR Firma";
+    /* margin-left: 35px; */
 }
 
 .container2 {
@@ -342,18 +412,19 @@ input {
 }
 
 .circles {
-    width: 550px;
+     
     height: 700px;
     background-color: #FFF6EE;
     border-radius: 5px;
     margin-top: 40px;
     position: relative;
-    padding-left: 40px;
+    padding: 0 20px;
+   
 }
 
 .circles img {
     position: absolute;
-    left: 90px;
+    right: 0;
     bottom: 0;
 }
 
@@ -372,17 +443,17 @@ input {
 .circles h1 {
     color: #022B69;
     margin: 30px 0;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .circles p {
     color: #748BB0;
     margin-bottom: 30px;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .emergency {
-    width: 550px;
+     
     height: 700px;
     background-color: #FFF6EE;
     border-radius: 5px;
@@ -406,17 +477,17 @@ input {
 .emergency h1 {
     color: #022B69;
     margin: 30px 0;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .emergency p {
     color: #748BB0;
     margin-bottom: 30px;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .stocks {
-    width: 550px;
+     
     height: 700px;
     background-color: #F5F6FA;
     border-radius: 5px;
@@ -427,7 +498,7 @@ input {
 
 .stocks img {
     position: absolute;
-    left: 100px;
+    right: 0;
 }
 
 .stocks a {
@@ -439,24 +510,28 @@ input {
 .stocks h3 {
     color: #96A7C5;
     margin-top: 70px;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 .stocks h1 {
     color: #022B69;
     margin: 30px 0;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .stocks p {
     color: #748BB0;
     margin-bottom: 30px;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .containerA {
-    display: flex;
-    width: 100%;
+    display: grid;
+    width: 95%;
+    margin-top: 80px;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+
 }
 
 .app-img {
@@ -488,17 +563,17 @@ input {
     top: 50px;
     font-size: 2.5rem;
     letter-spacing: -1px;
-    width: 35%;
+    width:auto;
 }
 
 .create h3 {
     color: #375788;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 .create p {
     color: #0066f5;
-    font-size: 1.2rem;
+    font-size: 1rem;
     width: 65%;
 }
 
@@ -509,19 +584,20 @@ input {
 }
 
 .ver p {
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 .btn {
     width: 150px;
-    height: 45px;
+    height: 35px;
     border-radius: 5px;
     background-color: #0066F5;
-    padding: 5px;
+    padding: 2px;
     color: white;
     border: none;
-    position: absolute;
-    bottom: 90px;
+    margin-top: 80px;
+    /* position: absolute;
+    bottom: 90px; */
 }
 
 .containerB {
@@ -530,12 +606,13 @@ input {
     background-color: #FCFCFC;
     height: 800px;
     /* width: 100%; */
-    margin-top: 200px;
+    /* margin-top: 200px; */
     /* padding-top: 20px; */
     align-items: center;
     justify-content: center;
-    padding-left: 60px;
+    /* padding-left: 60px; */
     position: relative;
+    margin: 200px auto;
 }
 
 .containerC {
@@ -647,13 +724,17 @@ input {
     color: yellow;
 }
 
-.down-load a {
+.download-now{
     text-decoration: none;
     text-transform: uppercase;
+    font-weight: bold;
+    font-size: 10px;
+    color: #0066f5;;
+    margin-top: 0;
 }
 
 .paragraph {
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     margin-top: 20px;
 }
 
@@ -686,21 +767,19 @@ input {
     border-radius: 12px;
     padding: 80px 0;
     display: flex;
-    gap: 150px;
-    align-items: center;
-    justify-content: center;
+   justify-content: space-between;
     box-shadow: 0 59px 51px -34px rgb(0 103 245 / 30%);
     width: 97%;
 }
 
 .sign-up h1 {
-    font-size: 3.9rem;
+    font-size:24px;
     line-height: 1.4;
     color: #fff;
 }
 
 .email-field {
-    padding: 20px 34px;
+    padding: 15px 34px;
     border-radius: 6px;
     background-color: #B9DDFD;
     width: 350px;
@@ -710,12 +789,12 @@ input {
 .sign-btn {
     color: #022b69;
     background-color: white;
-    padding: 17px 40px;
+    padding: 10px 30px;
     border: none;
     border-radius: 6px;
     position: absolute;
     left: 246px;
-    top: 3px;
+    top: 4px;
 }
 
 .email-field-whole {
@@ -731,19 +810,28 @@ input {
 }
 
 .links a:hover {
-    color: blue;
+    color: #0066f5;
 }
 
 .footer-links h3 {
-    padding: 10px;
+    /* padding: 10px; */
     color: #022B69;
 }
 
 .footer-links {
-    display: flex;
-    gap: 200px;
-    padding-left: 10px;
+
+    /* padding-left: 10px; */
     padding-bottom: 35px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+
+}
+
+.company-pro,
+.resource-contact {
+    display: flex;
+   gap: 180px;
 }
 
 hr {
@@ -760,8 +848,9 @@ hr {
 }
 
 .ContainerE p {
-    margin: 10px 0;
+    /* margin: 10px 0; */
     line-height: 1.3;
+    font-size: 16px;
 
 }
 
@@ -774,17 +863,21 @@ hr {
 .footer-para2 {
     color: rgba(2, 43, 105, .48);
 }
+.footer-para2-1{
+    color: rgba(2, 43, 105, .48);
+}
 
 .ContainerE {
-    padding-left: 15px;
     position: relative;
     font-family: "CW BR Firma", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    padding-bottom: 60px;
 }
 
 .ng {
     color: #022b69;
     font-size: 1rem;
     line-height: 1.7;
+    margin-bottom: 10px;
 }
 
 .fin {
@@ -793,21 +886,23 @@ hr {
 
 .sec-sec {
     display: flex;
-    gap: 10px;
+    /* gap: 10px; */
     border: 0.5px rgba(2, 43, 105, .06) solid;
     box-shadow: 1px 8px 11px rgba(2, 43, 105/2%);
     padding: 12px 28px 12px 20px;
     background: #fff;
     border-radius: 5px;
     width: 200px;
-    position: absolute;
+    margin-right: 0;
+    /* position: absolute;
     top: 80px;
-    right: 10px;
-    align-items: center;
-    justify-content: center;
+    right: 10px; */
 
 }
-
+.ng-div{
+    display: flex;
+    justify-content:space-between;
+}
 .sec-2 {
     display: flex;
     flex-direction: column;
@@ -827,3 +922,330 @@ hr {
     color: rgba(2, 43, 105, .6);
     font-size: 0.8rem;
 }
+
+.rect-div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+}
+.sign-free{
+    padding-left: 50px;
+}
+.e-mail{
+    padding-right: 50px;
+}
+
+
+@media screen and (max-width: 425px) {
+    .navbar {
+        /* overflow: hidden; */
+        background-color: red;
+        position: relative;
+
+    }
+    .bank{
+        width: 100%;
+        line-height: 1.3;
+        justify-content: center;
+        align-content: center;
+    }
+   
+    
+
+    .navbar,
+    .nav-nav-bar {
+        display: block;
+    }
+
+    .navbar a {
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+    }
+
+    .wura{
+        width: 80%;
+    margin: auto;
+    right: 12px;
+    }
+    .fa-solid fa-bars {
+        background: black;
+        display: block;
+        position: absolute;
+        right: 0px;
+        top: 0;
+    }
+
+    .navbar a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+    .saving{
+        margin-top: 30px;
+        /* width: 100%; */
+    }
+
+    .containerA {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .container1 {
+       margin-top: 70px;
+    }
+    .section-img {
+        width: 300px;
+    }
+
+    .saving,
+    .mutual,
+    .get,
+    .stash,
+    .circles,
+    .emergency,
+    .stocks {
+        width: 90%;
+        
+    }
+
+    .containerB {
+        display: flex;
+        background-color: white;
+        flex-direction: column;
+        margin-top: 500px;
+        height: 650px;
+    
+
+    }
+
+    .app-img {
+        width: 300px;
+        height: 600px;
+    }
+
+    .containerC {
+        margin-top: 570px;
+    }
+
+    .box {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .ratee {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .payment-div {
+        width: 100%;
+        margin-top: 0px;
+        height: 600px;
+    }
+
+   .build h1 {
+        position: absolute;
+        top: 350px;
+        font-size: 2rem;
+        width: auto;
+        text-align: center;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    .company-pro{
+        gap: 50px;
+    } 
+    
+  .resource-contact{
+      margin-top: 30px;
+      gap: 50px;
+  }
+
+
+    
+    .Cont-C {
+        display: flex;
+        flex-direction: column;
+        /* justify-content:space-between; */
+        align-items: center;
+    }
+    .btn {
+        /* justify-content: center;
+        align-items: center; */
+      margin-left: 80px;
+       align-self: center;
+
+    }
+
+    .keep {
+        width: 105%;
+    }
+
+    .trust {
+        width: 100%;
+    }
+
+    
+    .container-r {
+        padding: 0 20px;
+        margin: auto;
+    }
+
+    .footer-links {
+        display: flex;
+        flex-direction: column;
+        font-size: 14px;
+        
+    }
+    .e-mail{
+        padding-top: 90px;
+    }
+
+    .email-field-whole {
+        display: flex;
+        /* padding-top: 0; */
+    }
+    .email-field{
+        display: flex;
+        flex-direction: column;
+        width: 250px;
+        margin-bottom: 15px;
+        position: relative;
+       top: -60px;
+       
+
+    }
+    .sign-btn {
+        color: #022b69;
+        background-color: white;
+        padding: 10px 30px;
+        border: none;
+        border-radius: 6px;
+        position: absolute;
+        width: 200px;
+        left: 5px;
+        top: 84px;
+    }
+    .ng-div{
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+
+    .sign-up {
+        margin: 50px auto;
+        background-color: #0066f5;
+        border-radius: 12px;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        width: 85%;
+    }
+    .sign-free h1{
+        padding-top: 50px;
+        padding-left: 50px;
+    }
+
+    .free {
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: 18px;
+    }
+
+    .start-invest {
+        display: flex;
+        position: absolute;
+        top: 40px;
+        left: 0;
+        font-size: 18px;
+    }
+    .ContainerE {
+        width: 90%;
+        margin: auto;
+        padding-bottom: 60px;
+    }
+    /* .sec-sec {
+        display: flex;
+        flex-direction: column;
+    } */
+
+    .navbar {
+        width: 100%;
+    }
+
+    .head {
+        width: 100%;
+    }
+
+
+
+
+    .start {
+        background-color: #0066f5;
+        width: 200px;
+        font-size: 1rem;
+        border-radius: 5px;
+        /* height: 30px; */
+        padding: 8px;
+        margin-left: 5px;
+        color: white;
+        position: absolute;
+        top: 220px;
+        left: 0px;
+        margin-top: 58px;
+    }
+
+    .wealth {
+        position: relative;
+        top: 1800px;
+    }
+   
+}
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    .desktop, .mobile-navlinks {
+        display: none;
+        font-size: 13px;
+        list-style: none;
+    }
+    .mobile-navlinks li{
+        padding-bottom: 5px;
+        background-color: white;
+    }
+    .mobile-navlinks{
+        margin-top: 8px;
+    } 
+    .mobile {
+        display: block;
+    }
+
+    .header{
+        justify-content: space-between;
+    }
+
+    .navbar-trigger{
+        font-size: 25px;
+        color: #0066f5;
+    }
+    .navbar-trigger:hover .mobile-navlinks{
+        display: block;
+    }
+
+    .rect-div{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: start;
+    }
+}
+
